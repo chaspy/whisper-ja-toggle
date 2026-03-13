@@ -10,7 +10,7 @@ LOG_FILE="$STATE_DIR/ffmpeg.log"
 
 WHISPER_HOME="${WHISPER_CPP_HOME:-$HOME/.local/src/whisper.cpp}"
 WHISPER_CLI="$WHISPER_HOME/build/bin/whisper-cli"
-WHISPER_MODEL="${WHISPER_MODEL:-$WHISPER_HOME/models/ggml-small.bin}"
+WHISPER_MODEL="${WHISPER_MODEL:-$WHISPER_HOME/models/ggml-large-v3.bin}"
 WHISPER_THREADS="${WHISPER_THREADS:-$(sysctl -n hw.ncpu 2>/dev/null || echo 8)}"
 WHISPER_LANGUAGE="${WHISPER_LANGUAGE:-ja}"
 WHISPER_AUTOPASTE="${WHISPER_AUTOPASTE:-0}"
